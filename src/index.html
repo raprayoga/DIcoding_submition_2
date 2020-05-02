@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>NgaYaps!</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+
+<body>
+  <header>
+    <div class="jumbotron jumbotron-fluid pt-0">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"><span class="brandA">Nga</span><span class="brandB">Yaps!</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item mr-5">
+                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item  mr-5">
+                <a class="nav-link" href="#overview">Overview</a>
+              </li>
+              <li class="nav-item  mr-5">
+                <a class="nav-link" href="#search">Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>        
+      </div>
+      <div class="container text-center jumbo-text"> 
+        <div class="row justify-content-md-center">
+          <div class="col-md-8">
+            <h1 class="display-4"><span class="brandA">Nga</span><span class="brandB">Yaps!</span></h1>
+            <p class="lead">yuk cari tempat-tempat seru untuk kamu kunjungi</p>
+            <p class="lead">
+              <a class="btn btn-primary btn-md" href="#" role="button">Cari Sekarang</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Awal Overview -->
+  <section id="overview">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div>
+            <h2 class="font-weight-bold">Tentukan Petualanganmu Selanjutnya</h2>
+            <p>Dapatkan rekomendasi tempat wisata terbaik disekitarmu yang seru dan pastinya menambah ilmu hanya dalam satu langkah</p>
+          </div>
+        </div>
+        <div class="col-md-8"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Overview -->
+
+
+  <!-- Awal Search -->
+  <section class="mt-5" id="search">
+    <div class="container">
+      <div class="row justify-content-md-around">
+        <div class="col-md-4">
+          <h2 class="mb-5">Kamu mau kemana ?</h2>
+          <form>
+            <div class="form-row align-items-center mb-2">
+              <select class="custom-select my-1 mr-sm-2 custom-select-sm" id="inlineFormCustomSelectPref">
+                <option selected>Jenis Wisata ....</option>
+                <option value="1">Museum</option>
+                <option value="2">Cagar Budaya</option>
+              </select>
+            </div>
+            <div class="form-row align-items-center mb-2">
+              <select class="custom-select my-1 mr-sm-2 custom-select-sm" id="inlineFormCustomSelectPref">
+                <option selected>Provinsi ....</option>
+                <option value="1">D.K.I. Jakarta</option>
+                <option value="2">Prop. Jawa Barat</option>
+                <option value="3">Prop. Jawa Tengah</option>
+                <option value="4">Prop. D.I. Yogyakarta</option>
+                <option value="5">Prov. Jawa Timur</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm my-1">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img src="asset/undraw_traveling_t8y2.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Search -->
+
+
+  <!-- About Us -->
+  <section id="about-us">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h2 class="text-center">Apa itu <span class="brandA">Nga</span><span class="brandB">Yaps!</span></h2>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-6">
+          <p class="text-justify">NgaYaps! merupakan sebuah platform online yang menyediakan referensi tempat wisata bagi kamu yang sedang mencari tujuan wisata yang akan kamu kunjungi. Referensi yang kami berikan tidak hanya tempat wisata yang seru namun juga menambah ilmu, karena kami yakin bahwa berwisata bukan hanya soal seru dan menyenangkan tapi juga sebuah momen untuk mengambil pelajaran dari apa yang kita lalui. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  <!-- Akhir About Us -->
+
+
+  <footer>
+    <p>&copy; copyright 2020 | built by. Rafie Achmad Prayoga</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html> 

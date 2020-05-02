@@ -1,0 +1,95 @@
+.body {
+    font-family: 'prompt';
+}
+
+.jumbotron {
+    min-height: 800px;
+    background-image: url(asset/deanna-j-3GZlhROZIQg-unsplash.jpg);
+    background-size: cover;
+    opacity: .9;
+    /* Photo by Deanna J on Unsplash */
+}
+
+.jumbotron h1 {
+    font-family: 'kaushan';
+    font-size: 100px;
+}
+
+.brandA {
+    color: rgb(255, 0, 0);
+    font-family: 'kaushan';
+}
+
+.brandB {
+    color: blue;
+    font-family: 'kaushan';
+}
+
+.nav-item {
+    border-radius: 30px;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, .2);
+    color: black;
+    transition: 300ms;
+}
+
+.jumbo-text {
+    margin-top: 200px;
+}
+
+#search {
+    height: 800px;
+    margin: 200px 0 50px 0;
+    background-color: rgb(231, 238, 252);
+    padding-top: 150px;
+}
+
+#search img {
+    height: 400px;
+}
+
+#overview .row .col-md-8{
+    margin: 200px 0 200px 0;
+    background-image: url(asset/undraw_destinations_fpv7.svg);
+    height: 400px;
+    background-size: cover;
+}
+
+#overview .col-md-4 {
+    padding-top: 120px;
+}
+
+#overview h2 {
+    font-size: 60px;
+}
+
+#about-us {
+    height: 400px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+@font-face{
+    /* https://fonts.google.com/specimen/Kaushan+Script */
+    font-family: 'kaushan'; 
+    src: url(asset/Kaushan_Script_font/KaushanScript-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    /* https://fonts.google.com/specimen/Prompt */
+    font-family: 'prompt'; 
+    src: url(asset/Prompt/Prompt-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
