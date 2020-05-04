@@ -1,10 +1,14 @@
+html {
+	scroll-behavior: smooth;
+}
+
 .body {
     font-family: 'prompt';
 }
 
 .jumbotron {
     min-height: 800px;
-    background-image: url(asset/deanna-j-3GZlhROZIQg-unsplash.jpg);
+    background-image: url(../images/unsplash.jpg);
     background-size: cover;
     opacity: .9;
     /* Photo by Deanna J on Unsplash */
@@ -30,7 +34,7 @@
 }
 
 .nav-item:hover {
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(111, 109, 248, 0.2);
     color: black;
     transition: 300ms;
 }
@@ -39,20 +43,25 @@
     margin-top: 200px;
 }
 
-#search {
-    height: 800px;
-    margin: 200px 0 50px 0;
-    background-color: rgb(231, 238, 252);
-    padding-top: 150px;
+#nav-fixed {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 99;
+    background-color: rgba(115, 158, 250, 0.5);
 }
 
-#search img {
-    height: 400px;
+#overview h2, #overview p {
+    display: none;
+}
+
+.fade-over1, .fade-over2, .fade-s1, .fade-s2, .fade-about1, .fade-about2{
+    height: 100px;
 }
 
 #overview .row .col-md-8{
     margin: 200px 0 200px 0;
-    background-image: url(asset/undraw_destinations_fpv7.svg);
+    background-image: url(../images/undraw_destinations_fpv7.svg);
     height: 400px;
     background-size: cover;
 }
@@ -65,23 +74,45 @@
     font-size: 60px;
 }
 
+#search {
+    /* height: 800px; */
+    margin: 200px 0 50px 0;
+    background-color: rgb(231, 238, 252);
+    padding: 150px 0 150px 0;
+}
+
+#search h2, #search form {
+    display: none;
+}
+
+#search{
+    min-height: 600px;
+}
+
+.travel img {
+    height: 400px;
+}
+
 #about-us {
     height: 400px;
+}
+
+#about-us h2, #about-us p{
+    display: none;
 }
 
 footer{
     width: 100%;
     height: 50px;
     background-color: grey;
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
 }
-
 
 @font-face{
     /* https://fonts.google.com/specimen/Kaushan+Script */
     font-family: 'kaushan'; 
-    src: url(asset/Kaushan_Script_font/KaushanScript-Regular.ttf) format('truetype');
+    src: url(../font/Kaushan_Script_font/KaushanScript-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -89,7 +120,7 @@ footer{
 @font-face{
     /* https://fonts.google.com/specimen/Prompt */
     font-family: 'prompt'; 
-    src: url(asset/Prompt/Prompt-Regular.ttf) format('truetype');
+    src: url(../font/Prompt/Prompt-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
