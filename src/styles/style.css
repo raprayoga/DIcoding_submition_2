@@ -8,10 +8,13 @@ html {
 
 .jumbotron {
     min-height: 800px;
-    background-image: url(../images/unsplash.jpg);
+    background-image: url(../images/vasily-koloda-8CqDvPuo_kI-unsplash.jpg);
     background-size: cover;
     opacity: .9;
-    /* Photo by Deanna J on Unsplash */
+    position: relative;
+    z-index: 0;
+    color: white;
+    /* Photo by Vasily Koloda on Unsplash */
 }
 
 .jumbotron h1 {
@@ -43,6 +46,17 @@ html {
     margin-top: 200px;
 }
 
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
 #nav-fixed {
     display: none;
     position: fixed;
@@ -61,7 +75,7 @@ html {
 
 #overview .row .col-md-8{
     margin: 200px 0 200px 0;
-    background-image: url(../images/undraw_destinations_fpv7.svg);
+    background-image: url(../images/undraw_professor_8lrt.svg);
     height: 400px;
     background-size: cover;
 }

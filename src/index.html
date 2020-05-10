@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <title>NgaYaps!</title>
+  <title>NgaMpuss!</title>
 
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css"> -->
@@ -17,7 +17,7 @@
           <div class="navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item mr-5">
-                <a class="navbar-brand" href="#header"><span class="brandA">Nga</span><span class="brandB">Yaps!</span></a>
+                <a class="navbar-brand" href="#header"><span class="brandA">Nga</span><span class="brandB">Mpuss!</span></a>
               </li>
               <li class="nav-item  mr-5">
                 <a class="nav-link" href="#overview">Overview</a>
@@ -35,8 +35,8 @@
       <div class="container text-center jumbo-text"> 
         <div class="row justify-content-md-center">
           <div class="col-md-8">
-            <h1 class="display-4"><span class="brandA">Nga</span><span class="brandB">Yaps!</span></h1>
-            <p class="lead">yuk cari tempat-tempat seru untuk kamu kunjungi</p>
+            <h1 class="display-4"><span class="brandA">Nga</span><span class="brandB">Mpuss!</span></h1>
+            <p class="lead">yuk cari Kampus impianmu</p>
             <p class="lead">
               <a class="btn btn-primary btn-md" href="#search" role="button">Cari Sekarang</a>
             </p>
@@ -53,7 +53,7 @@
         <div class="navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item mr-5">
-              <a class="navbar-brand" href="#header"><span class="brandA">Nga</span><span class="brandB">Yaps!</span></a>
+              <a class="navbar-brand" href="#header"><span class="brandA">Nga</span><span class="brandB">Mpuss!</span></a>
             </li>
             <li class="nav-item  mr-5">
               <a class="nav-link" href="#overview">Overview</a>
@@ -79,9 +79,9 @@
         <div class="col-md-4">
           <div>
             <div class="fade-over1"></div>
-            <h2 class="font-weight-bold">Tentukan Petualanganmu Selanjutnya</h2>
+            <h2 class="font-weight-bold">Tentukan Studi Impianmu Selanjutnya</h2>
             <div class="fade-over2"></div>
-            <p>Dapatkan rekomendasi tempat wisata terbaik disekitarmu yang seru dan pastinya menambah ilmu hanya dalam satu langkah</p>
+            <p>Dapatkan informasi mengenai universitas-universitas terbaik di Indonesia dan seluruh dunia hanya dengan sekali klik</p>
           </div>
         </div>
         <div class="col-md-8"></div>
@@ -100,27 +100,23 @@
         </div>
         <div class="col-md-4">
           <div class="fade-s1"></div>
-          <h2 class="mb-5">Kamu mau kemana ?</h2>
+          <h2 class="mb-5">Kamu mau ngampus dimana ?</h2>
           <div class="fade-s2"></div>
-          <form>
+          <form action="page-2.html">
             <div class="form-row align-items-center mb-2">
-              <select class="custom-select my-1 mr-sm-2 custom-select-sm" id="inlineFormCustomSelectPref">
-                <option selected>Jenis Wisata ....</option>
-                <option value="1">Museum</option>
-                <option value="2">Cagar Budaya</option>
-              </select>
+              <div class="form-row align-items-center mb-2">
+                <input type="text" class="form-control form-control-sm" id="nama" placeholder="Nama Kampus...">
+                <small id="namalHelp" class="form-text text-muted">Masukkan nama kampus</small>
+              </div>
             </div>
             <div class="form-row align-items-center mb-2">
-              <select class="custom-select my-1 mr-sm-2 custom-select-sm" id="inlineFormCustomSelectPref">
-                <option selected>Provinsi ....</option>
-                <option value="1">D.K.I. Jakarta</option>
-                <option value="2">Prop. Jawa Barat</option>
-                <option value="3">Prop. Jawa Tengah</option>
-                <option value="4">Prop. D.I. Yogyakarta</option>
-                <option value="5">Prov. Jawa Timur</option>
-              </select>
+              <input type="text" class="form-control form-control-sm is-invalid" id="negara" placeholder="Negara...">
+              <small id="namaHelp" class="form-text text-muted">Masukkan nama negara dalam bahasa inggris</small>
+              <div class="invalid-feedback">
+                Kamu harus masukkan negara tujuanmu
+              </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-sm my-1">Submit</button>
+            <button class="btn btn-primary btn-sm my-1" id="search1">Submit</button>
           </form>
         </div>
       </div>
@@ -134,12 +130,12 @@
     <div class="container">
       <div class="fade-about1"></div>
       <div class="row justify-content-center">
-        <h2 class="text-center">Apa itu <span class="brandA">Nga</span><span class="brandB">Yaps!</span></h2>
+        <h2 class="text-center">Apa itu <span class="brandA">Nga</span><span class="brandB">Mpuss!</span></h2>
       </div>
       <div class="fade-about2"></div>
       <div class="row justify-content-center mt-3">
         <div class="col-md-6">
-          <p class="text-justify">NgaYaps! merupakan sebuah platform online yang menyediakan referensi tempat wisata bagi kamu yang sedang mencari tujuan wisata yang akan kamu kunjungi. Referensi yang kami berikan tidak hanya tempat wisata yang seru namun juga menambah ilmu, karena kami yakin bahwa berwisata bukan hanya soal seru dan menyenangkan tapi juga sebuah momen untuk mengambil pelajaran dari apa yang kita lalui. </p>
+          <p class="text-justify">NgaMpuss! merupakan sebuah situs mesin pencari yang menyediakan informasi mengenai universitas-universitas di seluruh dunia lengkap dengan website resminya. Kami menawarkan informasi lebih dari 100.000 universitas di seluruh dunia, karena kami yakin bahwa untuk mencapai cita-cita diperlukan persiapan yang tepat dan matang. </p>
         </div>
       </div>
     </div>
